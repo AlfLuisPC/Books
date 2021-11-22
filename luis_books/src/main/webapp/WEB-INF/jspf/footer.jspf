@@ -1,0 +1,7 @@
+<!-- Main Footer -->
+<footer class="main-footer">
+	<strong><span style="font-size: 14px;">Ambiente</span></strong>    
+    <div class="pull-right hidden-xs">
+        <strong>Versión</strong> 0.1.0
+    </div>
+</footer>

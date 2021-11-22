@@ -1,0 +1,61 @@
+<!-- Main Header -->
+<header class="main-header">
+    <!-- Logo -->
+    <a href="${pageContext.request.contextPath}" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini">Books</span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><b>Books</b> </span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Botón de navigación</span>
+        </a>
+        
+        
+                       
+        <!-- Navbar Right Menu -->
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">              
+            
+                <!-- User Account Menu -->
+                <li class="dropdown user user-menu">
+                    <!-- Menu Toggle Button -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <!-- The user image in the navbar-->
+                        <img src="${pageContext.request.contextPath}/resources/sit/img/user_icon.png" class="user-image" alt="Imagen del usuario" />
+                    </a>
+                    <ul class="dropdown-menu">
+                        <!-- The user image in the menu -->
+                        <li class="user-header">
+                            <img style="vertical-align: middle;"
+                                 src="${pageContext.request.contextPath}/resources/sit/img/user_icon.png"
+                                 class="img-circle" alt="User Image">
+                            <p style="vertical-align: middle;">
+                                <span style="font-size: 13px; font-weight: bold">${sesionUsuario.grupo}</span>
+                                <span id="grupo" style="font-size: 13px; font-weight: bold;"></span>
+                            </p></li>
+                        <li class="user-body">
+                            <div class="col-xs-12 text-center">
+                                <span style="font-size: 12px; font-weight: bold;">${sesionUsuario.nombre}</span>
+                                <span id="nombre" style="font-size: 12px; font-weight: bold;"></span>
+                            </div>
+                        </li>
+                        <!-- Menu Footer-->
+                        <li class="user-footer">
+                            <div class="pull-left">
+                                <a href="#" class="btn btn-default btn-flat">Perfil</a>
+                            </div>
+                            <div class="pull-right" id="cerrarSesion">
+                                <a href="#" class="btn btn-default btn-flat">Cerrar sesión</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
